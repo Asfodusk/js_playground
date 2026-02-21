@@ -209,3 +209,12 @@ main {
   user-select: none;
   cursor: move;
 }
+
+.box.is-bouncing {
+  animation: bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateX(500px);}
+}
